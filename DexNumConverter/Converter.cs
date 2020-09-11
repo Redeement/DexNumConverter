@@ -21,6 +21,7 @@ namespace DexNumConverter
 { 253, 360 },
 { 254, 424 },
 { 255, 429 },
+{ 256, 430 },
 { 257, 438 },
 { 258, 439 },
 { 259, 440 },
@@ -222,12 +223,10 @@ namespace DexNumConverter
                             }
                             bakestring += "png";
 
-                            Console.WriteLine(bakestring);
                             File.Copy(filePath, bakestring);
                         }
                         catch (Exception)
                         {
-                            Console.WriteLine("exception: " + Path.GetFileName(filePath));
                         }
                     }
                 }
