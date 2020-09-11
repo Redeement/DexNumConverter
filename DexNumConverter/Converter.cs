@@ -191,7 +191,7 @@ namespace DexNumConverter
                     string bakestring = op + "\\";
                     Console.WriteLine(bakestring);
                     string[] cName = Path.GetFileName(filePath).Split(".");
-                    if (Path.GetExtension(filePath) == ".png")
+                    if (Path.GetExtension(filePath) == ".png" && cName.Length < 4)
                     {
                         try
                         {
